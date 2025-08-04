@@ -9,9 +9,9 @@ body {
     background-color: #fff;
     color: #000;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
     position:absolute;
-
 }
 
 .conteudoo {
@@ -38,7 +38,7 @@ body {
     max-width: 400px;
 }
 
-span {
+.span-starbucks {
     color: #017143;
     font-size: 50px;
     font-weight: 900;
@@ -77,4 +77,50 @@ p {
     left: 0;
     clip-path: circle(500px at right 600px);
     z-index: -1;
+}
+.logo-starbucks{
+    margin: 10px;
+}
+@media screen and ( max-width: 900px ) {
+    .circulo{
+        clip-path: circle(400px at right 600px);
+    }
+}
+@media screen and ( max-width: 700px ) {
+    .circulo{
+        clip-path: circle(300px at right 600px);
+    }
+    .logo-starbucks{
+        width: 70px;
+    }
+    .caixa-texto{
+        width: 200px;
+    }
+}
+@media screen and ( max-width: 500px ) {
+    .circulo{
+        clip-path: circle(250px at bottom);
+        position: absolute;
+    }
+    .imagem{
+        display: inline-block;
+        position: absolute;
+    }
+    .starbucks{
+        display: inline-block;
+        position: absolute;
+        margin: 140px 0 0 90px;
+    }
+    .caixa-texto{
+        text-align: center;
+    }
+    p{
+        margin: 0 40px 200px ;
+        width: 200px;
+    }
+    .span-titulo{
+        display: inline-block;
+        margin: 0 40px;
+        width: 200px;
+    }
 }
